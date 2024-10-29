@@ -27,8 +27,10 @@ public class JsfLocal {
     }
     
     private int number;
+    private int base;
     private int exponent;
-    private double result;
+    private double resultExpo;
+    private double resultRoot;
 
     public int getNumber() {
         return number;
@@ -38,6 +40,16 @@ public class JsfLocal {
         this.number = number;
     }
 
+    public int getBase() {
+        return base;
+    }
+
+    public void setBase(int base) {
+        this.base = base;
+    }
+    
+    
+
     public int getExponent() {
         return exponent;
     }
@@ -45,19 +57,31 @@ public class JsfLocal {
     public void setExponent(int exponent) {
         this.exponent = exponent;
     }
-    
-    
 
-    public double getResult() {
-        return result;
+    public double getResultExpo() {
+        return resultExpo;
     }
 
-    public void setResult(double result) {
-        this.result = result;
+    public void setResultExpo(double resultExpo) {
+        this.resultExpo = resultExpo;
+    }
+
+    public double getResultRoot() {
+        return resultRoot;
+    }
+
+    public void setResultRoot(double resultRoot) {
+        this.resultRoot = resultRoot;
     }
     
     public void exponential() {
-        result = ejbLocal.exponentialTo(number, exponent);
+        resultExpo = ejbLocal.exponentialTo(base, exponent);
     }
+    
+    public void squareRoot () {
+        resultRoot = ejbLocal.squareRoot(number);
+    }
+    
+    
     
 }

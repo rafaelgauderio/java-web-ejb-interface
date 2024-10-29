@@ -19,4 +19,8 @@ public class EjbLocal implements EjbLocalLocal {
         return Math.pow(base,exponent);
     }
     
+    public double squareRoot(int number) {
+        return Math.sqrt(number);
+    }
+    
 }

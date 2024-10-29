@@ -11,10 +11,15 @@
     <h:body styleClass="formatted">
         Server stateless with local interface
         <h:form >   
-            <h:inputText pt:placeholder="base" value="#{jsfLocal.number}" styleClass="formatted" style="width:60px"/>
+            <h:inputText pt:placeholder="base" value="#{jsfLocal.base}" styleClass="formatted" style="width:60px"/>
             <h:inputText pt:placeholder="exponent" value="#{jsfLocal.exponent}" styleClass="formatted" style="width:100px"/>
-            <h:outputText value="#{jsfLocal.result}" style="width:100px;" styleClass="output"/>
+            <h:outputText value="#{jsfLocal.resultExpo}" style="width:100px;" styleClass="output"/>
             <h:commandButton action="#{jsfLocal.exponential()}" value="Click to exponential" style="width:130px;height:40px"/>
+        </h:form>
+           <h:form >   
+            <h:inputText pt:placeholder="rooting" value="#{jsfLocal.number}" styleClass="formatted" style="width:60px"/>            
+            <h:outputText value="#{jsfLocal.resultRoot}" style="width:100px;" styleClass="output"/>
+            <h:commandButton action="#{jsfLocal.squareRoot()}" value="Click square root" style="width:150px;height:40px"/>
         </h:form>
     </h:body>
 

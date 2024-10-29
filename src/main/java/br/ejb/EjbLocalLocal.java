@@ -16,5 +16,6 @@ public interface EjbLocalLocal {
     
     // to be access the methos has to be declareted on local interface
       public double exponentialTo(int base, int exponent);
+      public double squareRoot(int number);
     
 }
