@@ -15,18 +15,21 @@ and open the template in the editor.
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 10px 5px;   
-    font-size: 20px;
+    font-size: 14px;    
 }
 
 .output {        
     background: bisque;
     font-size: 30px;
     font-weight: 700; 
-    text-align: center;
-    margin: 0 20px;
+    text-align: center;  
 }
 
 .block {
     display: block;
+}
+.padding {
+    padding-right: 5px; 
+    background: aqua;
 }
 

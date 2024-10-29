@@ -2,18 +2,24 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?xml-stylesheet href="style.css" type="text/css"?>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
     <h:head>
         <title>Facelet Practic with local interface</title>
     </h:head>
    <link rel="stylesheet" type="text/css" href="style.css"/>
     <h:body styleClass="formatted">
         Server stateless with local interface
-        <h:form styleClass="formatted" >
-            <h:inputText value="#{jsfLocal.number}" styleClass="formatted"/>
+        <h:form >   
+            <h:inputText pt:placeholder="base" value="#{jsfLocal.number}" styleClass="formatted" style="width:60px"/>
+            <h:inputText pt:placeholder="exponent" value="#{jsfLocal.exponent}" styleClass="formatted" style="width:100px"/>
             <h:outputText value="#{jsfLocal.result}" style="width:100px;" styleClass="output"/>
-            <h:commandButton action="#{jsfLocal.square()}" value="Click to square" style="width:100px;height:40px"/>
+            <h:commandButton action="#{jsfLocal.exponential()}" value="Click to exponential" style="width:130px;height:40px"/>
         </h:form>
     </h:body>
+   <script>
+ 
+</script>
+
 </html>
 

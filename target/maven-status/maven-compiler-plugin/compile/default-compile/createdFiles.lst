@@ -1,6 +1,5 @@
-br\ejb\EjbLocalLocal.class
-br\jsf\EjbLocalLocal.class
-br\ejb\EjbLocal.class
 br\resources\JavaEE8Resource.class
+br\ejb\EjbLocalLocal.class
 br\JAXRSConfiguration.class
-br\jsf\jsfLocal.class
+br\jsf\JsfLocal.class
+br\ejb\EjbLocal.class

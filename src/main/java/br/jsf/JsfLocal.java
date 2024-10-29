@@ -27,6 +27,7 @@ public class JsfLocal {
     }
     
     private int number;
+    private int exponent;
     private double result;
 
     public int getNumber() {
@@ -37,6 +38,16 @@ public class JsfLocal {
         this.number = number;
     }
 
+    public int getExponent() {
+        return exponent;
+    }
+
+    public void setExponent(int exponent) {
+        this.exponent = exponent;
+    }
+    
+    
+
     public double getResult() {
         return result;
     }
@@ -45,8 +56,8 @@ public class JsfLocal {
         this.result = result;
     }
     
-    public void square() {
-        result = ejbLocal.squareValue(number);
+    public void exponential() {
+        result = ejbLocal.exponentialTo(number, exponent);
     }
     
 }

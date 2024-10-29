@@ -15,8 +15,8 @@ import javax.ejb.Stateless;
 public class EjbLocal implements EjbLocalLocal {
 
     
-    public double squareValue(int number) {
-        return Math.pow(number,2);
+    public double exponentialTo(int base, int exponent  ) {
+        return Math.pow(base,exponent);
     }
     
 }
